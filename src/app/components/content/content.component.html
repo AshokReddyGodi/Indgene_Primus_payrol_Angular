@@ -1,0 +1,63 @@
+<section
+  style="
+    background-image: url('assets/images/background.jpg');
+    object-fit: contain;
+  "
+>
+  <h1 id="heading">RESULT OF THE TEST</h1>
+
+  <!-- circles -->
+  <div class="container">
+    <div class="circle">
+      <div class="aligner">
+        <p><i class="fa fa-calendar"></i></p>
+        <h4 class="text">Never</h4>
+      </div>
+    </div>
+    <div class="circle">
+      <div class="aligner">
+        <p><i class="fa fa-calendar"></i></p>
+        <h4 class="text">Occasionally</h4>
+      </div>
+    </div>
+    <div class="circle">
+      <div class="aligner">
+        <p><i class="fa fa-clock-o"></i></p>
+        <h4 class="text">4 hours</h4>
+      </div>
+    </div>
+    <div class="circle">
+      <div class="aligner">
+        <p><i class="fa fa-comment"></i></p>
+        <h4 class="text">Yearly</h4>
+      </div>
+    </div>
+    <div class="circle">
+      <div class="aligner">
+        <p><i class="fa fa-calendar"></i></p>
+        <h4 class="text">Never</h4>
+      </div>
+    </div>
+  </div>
+
+  <!-- progress bar -->
+  <div class="wrapper">
+    <nav class="tabs">
+      <div class="selector"></div>
+      <a href="#" class="active firstElement"></a>
+      <a href="#"></a>
+      <a href="#"></a>
+    </nav>
+    <p>
+      <span id="less"> LESS RELEVANT </span>
+      <span id="relevant"> RELEVANT </span>
+      <span id="very"> VERY RELEVANT </span>
+    </p>
+  </div>
+  <!-- button -->
+  <div id="try-button">
+    <button class="button" (click)="reset()">
+      TRY AGAIN&nbsp;&nbsp; <i class="fa fa-angle-right"></i>
+    </button>
+  </div>
+</section>

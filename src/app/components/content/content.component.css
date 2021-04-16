@@ -1,0 +1,248 @@
+/* background */
+section {
+  padding: 58px;
+  opacity: 0.7;
+}
+
+@media screen and (max-width: 448px) {
+  section {
+    height: 1478px;
+  }
+}
+/* text heading */
+#heading {
+  /* padding: 80px; */
+  font-family: cursive;
+  font-weight: normal;
+  color: white;
+  font-size: 56px;
+}
+
+h1#heading {
+  text-align: center;
+  /* font-size: 90px; */
+}
+
+@media screen and (max-width: 448px) {
+  #heading {
+    font-family: cursive;
+  }
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-content: flex-start;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+  height: 340px;
+  /* border: 1px solid #000000; */
+}
+
+.circle {
+  /* border: 5px solid #ff0000; */
+  background-color: #fdfdfd;
+  width: 200px;
+  height: 200px;
+  border-radius: 1000px;
+  margin: 0.5em;
+}
+
+/* .circle.kitten {
+    background-image: url('http://placekitten.com/g/200/200');
+    background-size: cover;
+    background-repeat: none;
+    background-position: center center;
+    color: white;
+  } */
+
+.circle:hover {
+  background-color: #dfdc45;
+  border-style: dotted;
+  color: white;
+}
+
+.aligner {
+  /* display: flex; */
+  padding-top: 34px;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  text-align: center;
+}
+
+.fa-calendar:before {
+  content: "\f073";
+  color: #da2525;
+  font-size: 60px;
+}
+
+.fa-comment:before {
+  content: "\f075";
+  color: #da2525;
+  font-size: 60px;
+}
+.fa-clock-o:before {
+  content: "\f017";
+  color: #da2525;
+  font-size: 60px;
+}
+.text {
+  color: #da2525;
+}
+
+/* progress bar */
+
+.wrapper {
+  height: 122px;
+  /* width: 100%; */
+  text-align: center;
+  margin: 50px auto;
+  /* padding: 128px; */
+  width: 78%;
+}
+.tabs {
+  width: 90%;
+  font-size: 15px;
+  padding: 6px;
+  list-style: none;
+  background: #c30808;
+  box-shadow: 0px 5px 20px rgb(0 0 0 / 10%);
+  display: inline-block;
+  border-radius: 50px;
+  position: relative;
+}
+.tabs a {
+  text-decoration: none;
+  color: #777;
+  text-transform: uppercase;
+  padding: 5px 20px;
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+  transition-duration: 0.6s;
+  width: 29%;
+}
+.tabs a.active {
+  color: #fff;
+}
+
+/* .tabs a i{
+  margin-right:5px;
+} */
+
+.tabs .selector {
+  border-bottom-left-radius: 40px;
+  border-top-left-radius: 38px;
+  border-bottom-right-radius: 38px;
+  border-top-right-radius: 38px;
+  height: 100%;
+  display: inline-block;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: 1;
+  /* border-radius: 50px; */
+  transition-duration: 0.6s;
+  transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  background: #d3d3d382;
+  background: -moz-linear-gradient(45deg, #d3d3d382 0%, #d3d3d382 100%);
+  /* background: -webkit-linear-gradient( 
+45deg
+, #c5c5c5 0%,#c3c3c3 100%); */
+  /* background: linear-gradient( 
+45deg
+, #ffffff 0%,#ffffff 100%); */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d3d3d382', endColorstr='#d3d3d382',GradientType=1 );
+}
+
+nav.tabs {
+  border: 12px solid #d0d0d0;
+  /* outline-color: darkred; */
+  /* outline: aqua; */
+}
+
+#less {
+  margin-right: 147px;
+  color: white;
+  font-weight: 500;
+  font-size: 22px;
+}
+
+#relevant {
+  margin-right: 168px;
+  color: white;
+  font-weight: 500;
+  font-size: 22px;
+}
+
+#very {
+  margin-right: 2px;
+  color: white;
+  font-weight: 500;
+  font-size: 22px;
+}
+
+@media screen and (max-width: 448px) {
+  #less,
+  #relevant,
+  #very {
+    font-size: 8px;
+  }
+}
+
+@media screen and (max-width: 448px) {
+  #relevant {
+    margin-left: -124px;
+  }
+}
+
+@media screen and (max-width: 448px) {
+  #less {
+    margin-left: 24px;
+  }
+}
+@media screen and (max-width: 448px) {
+  #very {
+    margin-left: -156px;
+  }
+}
+@media screen and (max-width: 448px) {
+  .wrapper {
+    padding-top: 695px;
+    width: 100%;
+  }
+}
+
+/* button */
+
+.button {
+  background-color: transparent;
+  opacity: 0.9;
+  border: none;
+  color: rgb(255, 255, 255);
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 22px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border: 2px solid rgb(224, 222, 222);
+  border-radius: 40px;
+  background-color: rgba(231, 228, 228, 0.342);
+}
+
+div#try-button {
+  text-align: center;
+}
+
+.button:hover {
+  background-color: #dfdc45;
+  color: white;
+  border-style: dotted;
+}
+.fa {
+  color: red;
+  font-weight: bold;
+}
